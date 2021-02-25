@@ -37,3 +37,28 @@ function echoWithLength<T extends IWithLength>(arr: T): T {
 const strs = echoWithLength('str') 
 const obj = echoWithLength({length: 10})
 const arr2 = echoWithLength([1,2,3])
+
+
+
+class Queue<T> {
+  private data:any = [];
+  push(item: T) {
+    return this.data.push(item)
+  }
+  pop(): T {
+    return this.data.shift()
+  }
+}
+const queue = new Queue<number>()
+queue.push(1)
+console.log(queue.pop().toFixed())
+
+interface KeyPair<T, U> {
+  key: T
+  value: U
+}
+
+let kp1: KeyPair<number, string> = {key: 1, value: "string"}
+let kp2: KeyPair<string, number> = {key: 'str', value: 2}
+let arr: number[] = [1,2,3]
+let arrTwo: Array<number> = [1,2,3]
