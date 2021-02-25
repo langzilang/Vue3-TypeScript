@@ -14,14 +14,14 @@ module.exports = {
 		// 	},
 		// }
 	},
-  configureWebpack: {
-    plugins: [
-      new webpack.ProvidePlugin({
-        jQuery: "jquery",
-        $: "jquery"
-      })
-    ]
-  },
+  // configureWebpack: {
+  //   plugins: [
+  //     new webpack.ProvidePlugin({
+  //       jQuery: "jquery",
+  //       $: "jquery"
+  //     })
+  //   ]
+  // },
 	css:{
 		loaderOptions: {
       // 给 stylus-loader 传递选项
